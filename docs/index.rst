@@ -1,7 +1,7 @@
 :orphan:
 
 .. toctree::
-    index
+    index.rst
 
 hostprobe docs
 =============================
