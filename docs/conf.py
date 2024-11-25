@@ -1,11 +1,19 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from hostprobe._version import __version__ as _v
+import importlib.util
+from pathlib import Path
+
+version_path = Path(__file__).resolve().parent.parent / "hostprobe/_version.py"
+spec = importlib.util.spec_from_file_location("versionfile", str(version_path))
+versionfile = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(versionfile)
+
 
 project = 'hostprobe'
 copyright = '2024, malachi196'
 author = 'malachi196'
-version = _v
+
+version = versionfile.__version__
 
 # -- General configuration ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -18,13 +26,13 @@ exclude_patterns = [
 ]
 extensions = []
 language = 'en'
-master_doc = 'docs/index'
+master_doc = 'index'
 pygments_style = 'sphinx'
 source_suffix = '.rst'
-templates_path = ['docs/_templates']
+templates_path = ['_templates']
 
 # -- Options for HTML output ----------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['docs/_static']
+html_static_path = ['_static']
