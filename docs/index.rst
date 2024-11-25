@@ -1,8 +1,8 @@
 :orphan:
 
 .. toctree::
-    toctree/index
+    index
 
 hostprobe docs
-=============
+=============================
 Welcome to the ``hostprobe`` docs!
