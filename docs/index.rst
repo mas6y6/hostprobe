@@ -1,7 +1,7 @@
-:orphan:
-
 .. toctree::
-    :name: index
+    :maxdepth: 2
+    :caption: Contents
+    
 
 hostprobe docs
 =============================
