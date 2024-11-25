@@ -17,7 +17,7 @@ exclude_patterns = [
 ]
 extensions = []
 language = 'en'
-master_doc = 'index'
+master_doc = 'docs/index'
 pygments_style = 'sphinx'
 source_suffix = '.rst'
 templates_path = ['_templates']
