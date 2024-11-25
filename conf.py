@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from .hostprobe._version import __version__ as _v
+from hostprobe._version import __version__ as _v
 
 project = 'hostprobe'
 copyright = '2024, malachi196'
