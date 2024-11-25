@@ -14,7 +14,7 @@ exclude_patterns = [
     '_build',
     'Thumbs.db',
     '.DS_Store',
-    'README.rst'
+    'README.rst',
 ]
 extensions = []
 language = 'en'
