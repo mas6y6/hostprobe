@@ -25,7 +25,7 @@ exclude_patterns = [
     '.DS_Store',
     'README.rst',
 ]
-extensions = ['sphinx_rtd_theme']
+extensions = []
 language = 'en'
 master_doc = 'index'
 pygments_style = 'sphinx'
