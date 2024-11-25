@@ -18,13 +18,13 @@ exclude_patterns = [
 ]
 extensions = []
 language = 'en'
-master_doc = 'docs/index'
+master_doc = 'index'
 pygments_style = 'sphinx'
 source_suffix = '.rst'
-templates_path = ['docs/_templates']
+templates_path = ['_templates']
 
 # -- Options for HTML output ----------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['docs/_static']
+html_static_path = ['_static']
