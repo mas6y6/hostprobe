@@ -2,6 +2,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import importlib.util
 from pathlib import Path
+import os
 
 version_path = Path(__file__).resolve().parent.parent / "hostprobe/_version.py"
 spec = importlib.util.spec_from_file_location("versionfile", str(version_path))
@@ -36,3 +37,4 @@ templates_path = ['_templates']
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
