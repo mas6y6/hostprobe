@@ -1,0 +1,17 @@
+[project]
+name="hostprobe"
+version
+readme="README.rst"
+license={file="LICENSE", text="MIT License"}
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+]
+requires-python=">=3.6"
+authors=[
+    {name="malachi196"},
+]
+description="a cross-platform toolkit for probing networks in python"
+
+[project.urls]
+Homepage="https://github.com/malachi196/hostprobe/"
