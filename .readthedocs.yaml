@@ -7,4 +7,9 @@ build:
 
 python:
   install:
-    - requirements: ./docs/requirements.txt
+    - requirements: ./docs/requirements.
+    
+sphinx:
+  builder: html
+  configuration: conf.py
+  fail_on_warning: true
