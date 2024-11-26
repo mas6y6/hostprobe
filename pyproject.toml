@@ -1,8 +1,8 @@
 [project]
 name="hostprobe"
-dynamic=["version]
+dynamic=["version"]
 readme="README.rst"
-license={file="LICENSE", text="MIT License"}
+license={file="LICENSE"}
 classifiers=[
     "License :: OSI Approved :: MIT License",
     "Development Status :: 4 - Beta",
@@ -12,7 +12,20 @@ authors=[
     {name="malachi196"},
 ]
 description="a cross-platform toolkit for probing networks in python"
+dependencies=["psutil", "colorama"]
 
 [project.urls]
 Repository="https://github.com/malachi196/hostprobe/"
+Documentation="https://hostprobe.readthedocs.io/"
 Changelog="https://github.com/malachi196/hostprobe/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where=["."]
+include=["hostprobe*"]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools-scm", "wheel", "psutil", "colorama"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version={attr="hostprobe.__version__"}
