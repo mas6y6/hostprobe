@@ -1,6 +1,6 @@
 hostprobe
 ===========
-.. image:: "logo\hostprobe-logo (nobg, hd).png"
+.. image:: "./logo/hostprobe-logo.png"
     :alt: hostprobe logo
 a cross-platform toolkit for probing networks in python
 
