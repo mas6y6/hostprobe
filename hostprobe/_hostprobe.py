@@ -12,8 +12,6 @@ from ._constants import DEFAULTTHRESHOLD, MINTHRESHOLD
 from .exceptions import InvalidIp, ThresholdError
 from .utils import mebibyte
 
-_init()
-
 opsys = platform.system()
 process = psutil.Process(os.getpid())
 reachedthreshold = False
@@ -21,6 +19,7 @@ reachedthreshold = False
 #CRCSV: connection refused: cross system version
 if opsys == "Windows":
     CRCSV = errno.WSAECONNREFUSED
+    _init()
 elif opsys == "Darwin" or opsys == "Linux":
     CRCSV = errno.ECONNREFUSED
 else:
@@ -41,15 +40,18 @@ def check_host(host, port=80, timeout=1, result_queue:Queue=None) -> bool | int:
                 result_queue.put((host, 2))
             else:
                 print(f"{host} is offline")
+        elif e.args[0] == errno.EHOSTUNREACH:
+            if result_queue:
+                result_queue.put((host, 2))
+            else:
+                print(f"{host} is offline")
         elif e.args[0] == CRCSV:
             if result_queue:
                 result_queue.put((host, True))
             else:
                 print(f"{host} is online")
         else:
-            print(f"\n{e.args[0]}")
-            if result_queue:
-                result_queue.put((host, False))
+            raise Exception(f"An error has occured while checking {host}. If this is an accident, please create an issue on my github page: https://github.com/malachi196/hostprobe/issues/new/choose")
     except KeyboardInterrupt:
         result_queue.put((host, 0))
 
