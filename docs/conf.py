@@ -14,7 +14,7 @@ project = 'hostprobe'
 copyright = '2024, malachi196'
 author = 'malachi196'
 
-version = versionfile.__version__
+version = versionfile.version
 
 # -- General configuration ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
