@@ -8,10 +8,10 @@ Welcome to the ``hostprobe`` docs!
 .. toctree::
     :maxdepth: 2
     :caption: API:
-    content/api
+    content/api.rst
 
 Hostprobe strives to be a cross platform toolkit for networking.
-```py
+```
 >>> from hostprobe import netprobe
 >>> onlinehosts = netprobe("192.168.0.1") #returns a list
 >>> print(f"some online hosts: {onlinehosts}")
