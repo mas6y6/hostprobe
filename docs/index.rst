@@ -17,10 +17,11 @@ Hostprobe strives to be a cross platform toolkit for networking.
 
 
 .. code-block:: python
-    >>> from hostprobe import netprobe  
-    >>> onlinehosts = netprobe("192.168.0.1") #returns a list  
-    >>> print(f"some online hosts: {onlinehosts}")  
-    ["192.168.0.1", "192.168.0.7"]
+
+    from hostprobe import netprobe  
+    onlinehosts = netprobe("192.168.0.1") #returns a list  
+    print(f"some online hosts: {onlinehosts}")  
+    #["192.168.0.1", "192.168.0.7"]
 
 
 about
