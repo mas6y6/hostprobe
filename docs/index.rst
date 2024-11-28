@@ -27,7 +27,8 @@ about
 ----------------------------------
 This project is meant to be a cross-system
 toolkit for probing networks, with tools similar
-to nmap, but in python. Confirmed operating systems are
+to nmap, but in python. Confirmed operating systems are:
+
 * Windows
 * MacOS
 * Linux
