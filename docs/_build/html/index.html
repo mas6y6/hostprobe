@@ -80,20 +80,21 @@
 </ul>
 </div>
 <p>Hostprobe strives to be a cross platform toolkit for networking.</p>
-<div class="line-block">
-<div class="line"><br /></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hostprobe</span> <span class="kn">import</span> <span class="n">netprobe</span>
+<span class="n">onlinehosts</span> <span class="o">=</span> <span class="n">netprobe</span><span class="p">(</span><span class="s2">&quot;192.168.0.1&quot;</span><span class="p">)</span> <span class="c1">#returns a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;some online hosts: </span><span class="si">{</span><span class="n">onlinehosts</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#[&quot;192.168.0.1&quot;, &quot;192.168.0.7&quot;]</span>
+</pre></div>
 </div>
-<p>``
-&gt;&gt;&gt; from hostprobe import netprobe
-&gt;&gt;&gt; onlinehosts = netprobe(“192.168.0.1”) #returns a list
-&gt;&gt;&gt; print(f”some online hosts: {onlinehosts}”)
-[“192.168.0.1”, “192.168.0.7”]
-``</p>
 <section id="about">
 <h2>about<a class="headerlink" href="#about" title="Link to this heading"></a></h2>
-</section>
-<section id="api">
-<h2>api<a class="headerlink" href="#api" title="Link to this heading"></a></h2>
+<p>This project is meant to be a cross-system
+toolkit for probing networks, with tools similar
+to nmap, but in python. Confirmed operating systems are
+* Windows
+* MacOS
+* Linux
+* Unix</p>
 </section>
 </section>
 

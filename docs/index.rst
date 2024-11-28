@@ -10,7 +10,6 @@ Welcome to the ``hostprobe`` docs!
     :titlesonly:
     :glob:
 
-    index
     content/*
 
 Hostprobe strives to be a cross platform toolkit for networking. 
