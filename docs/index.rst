@@ -9,6 +9,7 @@ Welcome to the ``hostprobe`` docs!
     :maxdepth: 2
     :titlesonly:
     :glob:
+
     content/*
 
 Hostprobe strives to be a cross platform toolkit for networking. 
@@ -24,6 +25,10 @@ Hostprobe strives to be a cross platform toolkit for networking.
 
 about
 ----------------------------------
-
-api
-----------------------------------
+This project is meant to be a cross-system
+toolkit for probing networks, with tools similar
+to nmap, but in python. Confirmed operating systems are
+* Windows
+* MacOS
+* Linux
+* Unix

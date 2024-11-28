@@ -3,7 +3,9 @@
 import importlib.util
 from pathlib import Path
 import os
+import sys
 
+project_root = Path(__file__).parent.resolve()
 version_path = Path(__file__).resolve().parent.parent / "hostprobe/_version.py"
 spec = importlib.util.spec_from_file_location("versionfile", str(version_path))
 versionfile = importlib.util.module_from_spec(spec)
@@ -38,3 +40,4 @@ templates_path = ['./_templates']
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['./_static']
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
+sys.path.insert(0, os.path.abspath(str(project_root)))
