@@ -7,6 +7,8 @@ Welcome to the ``hostprobe`` docs!
 
 .. toctree::
     :maxdepth: 2
+    :titlesonly:
+    :glob:
 
 Hostprobe strives to be a cross platform toolkit for networking.
 ``
