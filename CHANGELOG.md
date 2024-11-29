@@ -5,8 +5,13 @@ All notable changes are documented to this file
 
 ## [1.0.0 beta 1] 11/26/24 - current
 second beta release, more config and docs
+### added
+- rtd installation page
+- rtd introduction page
+
 ### changed
-- readthedocs API
+- readthedocs API page
+- rtd homepage
 
 &nbsp;
 
