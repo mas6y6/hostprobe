@@ -5,6 +5,11 @@ hostprobe
 
 a cross-platform toolkit for probing networks in python
 
+links:
+
+- readthedocs: https://pypi.org/project/hostprobe/
+- pypi: https://pypi.org/project/hostprobe/
+
 ----------------------
 
 created by @malachi196
