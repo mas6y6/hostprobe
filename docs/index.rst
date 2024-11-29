@@ -8,12 +8,15 @@ Welcome to the ``hostprobe`` docs!
 .. toctree::
     :maxdepth: 2
     :titlesonly:
-    :glob:
+    :caption: Hostprobe:
 
-    content/*
+    content/installation
+    content/api
 
-Hostprobe strives to be a cross platform toolkit for networking. 
-
+Hostprobe strives to be a minimal cross-platform toolkit for networking. It uses the
+built-in python socket module to extract info from a network, such as if a 
+device is online, or all the online devices on your network. Hostprobe should
+have the capabilities of nmap, while being completely cross system, and in python.
 
 .. code-block:: python
 
@@ -25,9 +28,8 @@ Hostprobe strives to be a cross platform toolkit for networking.
 
 about
 ----------------------------------
-This project is meant to be a cross-system
-toolkit for probing networks, with tools similar
-to nmap, but in python. Confirmed operating systems are:
+This project is meant to be a cross-system network
+probning toolkit, although confirmed operating systems are:
 
 * Windows
 * MacOS
