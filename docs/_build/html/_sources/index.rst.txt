@@ -5,30 +5,17 @@ Welcome to the ``hostprobe`` docs!
 .. image:: _static/hostprobe.png
     :alt: hostprobe logo
 
+table of contents:
+----------------------------
 .. toctree::
     :maxdepth: 2
-    :titlesonly:
-    :glob:
+    :caption: general
 
-    content/*
+    content/introduction
+    content/installation
 
-Hostprobe strives to be a cross platform toolkit for networking. 
+.. toctree::
+    :maxdepth: 2
+    :caption: api
 
-
-.. code-block:: python
-
-    from hostprobe import netprobe  
-    onlinehosts = netprobe("192.168.0.1") #returns a list  
-    print(f"some online hosts: {onlinehosts}")  
-    #["192.168.0.1", "192.168.0.7"]
-
-
-about
-----------------------------------
-This project is meant to be a cross-system
-toolkit for probing networks, with tools similar
-to nmap, but in python. Confirmed operating systems are
-* Windows
-* MacOS
-* Linux
-* Unix
+    content/api
