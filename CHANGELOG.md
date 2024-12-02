@@ -6,7 +6,7 @@ All notable changes are documented to this file
 ## [1.0.0] 11/26/24 - current
 First release!!! Added config and docs + verified tools
 ### added
-- readhetdocs installation page
+- readthedocs installation page
 - readthedocs introduction page
 
 ### changed
