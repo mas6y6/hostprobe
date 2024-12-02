@@ -3,7 +3,7 @@ All notable changes are documented to this file
 
 &nbsp;
 
-## [1.0.0 beta 1] 11/26/24 - current
+## [1.0.0] 11/26/24 - current
 second beta release, more config and docs
 ### added
 - rtd installation page
