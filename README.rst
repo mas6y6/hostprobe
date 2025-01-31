@@ -1,6 +1,6 @@
 hostprobe
 ===========
-.. image:: https://github.com/malachi196/hostprobe/blob/main/logo/banner.png
+.. image:: https://github.com/mas6y6/hostprobe/blob/main/logo/banner.png
     :alt: hostprobe logo
 
 a cross-platform toolkit for probing networks in python
